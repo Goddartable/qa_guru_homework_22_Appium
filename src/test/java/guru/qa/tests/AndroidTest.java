@@ -1,5 +1,6 @@
-package tests;
+package guru.qa.tests;
 
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
@@ -10,6 +11,7 @@ import static io.qameta.allure.Allure.step;
 
 public class AndroidTest extends TestBase {
     @Test
+    @Tag("android")
     void successfulSearchTest() {
         step("Type search", () -> {
             $(accessibilityId("Search Wikipedia")).click();
@@ -19,6 +21,7 @@ public class AndroidTest extends TestBase {
     }
 
     @Test
+    @Tag("android")
     void findSettingsTest() {
         step("Click Menu button", () -> {
             $(id("org.wikipedia.alpha:id/menu_overflow_button")).click();

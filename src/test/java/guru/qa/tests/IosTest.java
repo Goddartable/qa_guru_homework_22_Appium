@@ -1,5 +1,6 @@
-package tests;
+package guru.qa.tests;
 
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 
@@ -11,6 +12,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class IosTest extends TestBase {
 
     @Test
+    @Tag("ios")
     void findHelloTextTest() {
         step("Input hello@browserstack.com", () -> {
             $(id("Text Button")).click();

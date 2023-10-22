@@ -1,4 +1,4 @@
-package helpers;
+package guru.qa.helpers;
 
 import static io.restassured.RestAssured.given;
 import static java.lang.String.format;
