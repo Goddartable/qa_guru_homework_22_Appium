@@ -6,10 +6,10 @@ import org.aeonbits.owner.Config;
         "classpath:auth.properties"
 })
 public interface AuthConfig extends Config {
-    @Key("username")
+    @Key("user")
     String getUserLogin();
 
-    @Key("password")
+    @Key("key")
     String getUserPassword();
 
     @Key("remoteUrl")
