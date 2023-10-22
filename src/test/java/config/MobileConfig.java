@@ -1,4 +1,4 @@
-package guru.qa.config;
+package config;
 
 import org.aeonbits.owner.Config;
 
