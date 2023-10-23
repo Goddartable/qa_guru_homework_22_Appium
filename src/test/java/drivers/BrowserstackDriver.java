@@ -36,8 +36,8 @@ public class BrowserstackDriver implements WebDriverProvider {
 
         try {
             return new RemoteWebDriver(
-                    //new URL(authConfig.getRemoteUrl()), mutableCapabilities);
-                    new URL("https://hub.browserstack.com/wd/hub"), mutableCapabilities);
+                    new URL(authConfig.getRemoteUrl()), mutableCapabilities);
+                    //new URL("https://hub.browserstack.com/wd/hub"), mutableCapabilities);
         } catch (MalformedURLException e) {
             throw new RuntimeException(e);
         }
