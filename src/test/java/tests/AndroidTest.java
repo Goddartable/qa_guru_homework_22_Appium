@@ -17,7 +17,7 @@ public class AndroidTest extends TestBase {
     @Tag("android")
     void successfulAppiumSearchTest() {
         step("Type search", () -> {
-            $(accessibilityId("Search \"Appium\" at Wikipedia")).click();
+            $(accessibilityId("Search Wikipedia")).click();
             $(id("org.wikipedia.alpha:id/search_src_text")).sendKeys("Appium");
         });
         step("Verify content found", () ->
@@ -29,7 +29,7 @@ public class AndroidTest extends TestBase {
     @Tag("android")
     void unsuccessfulSearchTest() {
         step("Type search", () -> {
-            $(accessibilityId("Try to search \"Java\" at Wikipedia")).click();
+            $(accessibilityId("Search Wikipedia")).click();
             $(id("org.wikipedia.alpha:id/search_src_text")).sendKeys("Java");
         });
         step("Open article", () -> {
