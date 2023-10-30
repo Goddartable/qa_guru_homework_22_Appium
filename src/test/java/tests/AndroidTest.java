@@ -48,8 +48,7 @@ public class AndroidTest extends TestBase {
             $(id("org.wikipedia.alpha:id/menu_overflow_button")).click();
         });
         step("Verify \"Settings\" exists", () ->
-                $$(id("org.wikipedia.alpha:id/explore_overflow_settings"))
-                        .shouldHave(sizeGreaterThan(0)));
+                $(id("org.wikipedia.alpha:id/explore_overflow_settings")).shouldBe(visible));
     }
 }
 
