@@ -33,7 +33,7 @@ public class AndroidTest extends TestBase {
             $(id("org.wikipedia.alpha:id/search_src_text")).sendKeys("Java");
         });
         step("Open article", () -> {
-            $(xpath("//*[@text='Java']")).click();
+            $$(id("org.wikipedia.alpha:id/page_list_item_container")).first().click();
         });
 
         step("Checking for error text", () -> {
