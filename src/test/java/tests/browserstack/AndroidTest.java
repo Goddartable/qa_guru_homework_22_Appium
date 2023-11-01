@@ -11,6 +11,7 @@ import static io.appium.java_client.AppiumBy.accessibilityId;
 import static io.qameta.allure.Allure.step;
 import static com.codeborne.selenide.Condition.visible;
 import static io.appium.java_client.AppiumBy.id;
+
 public class AndroidTest extends TestBase {
     @Test
     @Tag("android")
